@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- daisyUi and tailwind css cdn is here -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -18,12 +27,61 @@
   <body>
     <!-- header section of the website start from here --------------------------->
 
-    <section>
+    <section class="bg-primary">
       <!-- navbar section start from here -->
-      <nav class="flex justify-between">
-        <div class="font-dm-sans">Hello world</div>
+      <nav class="md:py-2 py-1">
+        <div class="navbar my-container">
+          <div class="navbar-start">
+            <button>
+              <img
+                class="md:w-40 sm:w-28 w-20"
+                src="./assets/logo.png"
+                alt=""
+              />
+            </button>
+          </div>
 
-        <div></div>
+          <div class="navbar-end gap-4">
+            <button
+              class="md:px-3 px-2 btn-ghost md:py-2 py-1 rounded-full border border-white md:text-sm text-sx font-light"
+            >
+              <i class="fa-solid fa-share-nodes text-white"></i>
+            </button>
+
+            <button
+              class="btn-ghost text-white text-dm-sans md:text-sm text-xs md:py-2 py-1 md:px-5 px-3 rounded-full border border-white"
+            >
+              Download the 2024 Repost
+            </button>
+
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Homepage</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
     </section>
 
