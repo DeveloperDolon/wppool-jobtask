@@ -167,7 +167,7 @@
     <!-- header section of the website end from here xxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
     <!-- wppool index section start from here -------------------------- -->
-    <section class="md:py-12 py-10 md:pb-0 pb-0 bg-[#ededed]">
+    <section class="md:py-12 py-10 md:pb-0 pb-0 bg-[#ededed] overflow-x-scroll">
       <div
         class="my-container bg-white rounded-sm grid grid-cols-12 md:p-6 p-5 gap-8 h-screen"
       >
@@ -176,10 +176,10 @@
           class="bg-[#EFF3F6] rounded-lg py-3 px-3 md:col-span-3 col-span-5 flex flex-col items-start gap-2"
         >
           <button
-            class="flex justify-between w-full transition-all text-crimson-pro md:text-lg text-base duration-300 hover:shadow-2xl hover:shadow-black hover:text-white py-1 px-2 rounded-lg hover:bg-primary"
+            class="flex justify-between bg-primary shadow-2xl shadow-black text-white w-full transition-all text-crimson-pro md:text-lg text-base duration-300 hover:shadow-2xl hover:shadow-black hover:text-white py-1 px-2 rounded-lg hover:bg-primary"
           >
             <span>The Index</span>
-            <span>+</span>
+            <span>-</span>
           </button>
 
           <button
@@ -224,6 +224,7 @@
               </h1>
             </div>
 
+            <!-- stat section is here -->
             <div
               class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 md:mt-4 mt-3 gap-5"
             >
@@ -293,6 +294,37 @@
                     Index
                   </p>
                 </div>
+              </div>
+            </div>
+
+            <!-- select option is here -->
+            <div
+              class="md:mt-7 mt-5 flex justify-between items-center flex-wrap gap-5"
+            >
+              <div class="flex gap-5 flex-wrap flex-1">
+                <select
+                  class="select select-sm lg:w-52 md:w-44 sm:w-40 w-fit outline-none bg-primary text-white border-none rounded-full md:px-5 px-4"
+                >
+                  <option disabled selected>Sectors</option>
+                  <option>Han Solo</option>
+                  <option>Greedo</option>
+                </select>
+
+                <select
+                  class="select select-sm lg:w-52 md:w-44 sm:w-40 w-fit outline-none bg-primary text-white border-none rounded-full md:px-5 px-4"
+                >
+                  <option disabled selected>Types of IPO</option>
+                  <option>Han Solo</option>
+                  <option>Greedo</option>
+                </select>
+              </div>
+
+              <div role="tablist" class="tabs tabs-boxed tabs-sm">
+                <a role="tab" class="tab">1Y</a>
+                <a role="tab" class="tab tab-active">YTD</a>
+                <a role="tab" class="tab">6M</a>
+                <a role="tab" class="tab">1M</a>
+                <a role="tab" class="tab">1W</a>
               </div>
             </div>
           </div>
