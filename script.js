@@ -55,4 +55,5 @@ const addingRowTable = async () => {
     tableBody.appendChild(row);
   });
 };
+// call to function for adding rows on the table dynamically
 addingRowTable();
