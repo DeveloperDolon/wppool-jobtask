@@ -1,0 +1,112 @@
+[
+  {
+    "company": "Apple Inc.",
+    "ticker": "AAPL",
+    "vertical": "Technology",
+    "price": 190.0,
+    "marketCapB": 3000,
+    "revenueGrowth": "12%",
+    "grossMargin": "40%",
+    "evRevenue": 6.5,
+    "ytdPerformance": "15%"
+  },
+  {
+    "company": "Microsoft Corporation",
+    "ticker": "MSFT",
+    "vertical": "Technology",
+    "price": 270.0,
+    "marketCapB": 2500,
+    "revenueGrowth": "14%",
+    "grossMargin": "68%",
+    "evRevenue": 7.2,
+    "ytdPerformance": "18%"
+  },
+  {
+    "company": "Amazon.com Inc.",
+    "ticker": "AMZN",
+    "vertical": "E-commerce",
+    "price": 110.0,
+    "marketCapB": 1500,
+    "revenueGrowth": "21%",
+    "grossMargin": "40%",
+    "evRevenue": 4.3,
+    "ytdPerformance": "12%"
+  },
+  {
+    "company": "Tesla, Inc.",
+    "ticker": "TSLA",
+    "vertical": "Automotive",
+    "price": 650.0,
+    "marketCapB": 700,
+    "revenueGrowth": "50%",
+    "grossMargin": "25%",
+    "evRevenue": 10.1,
+    "ytdPerformance": "30%"
+  },
+  {
+    "company": "Google LLC",
+    "ticker": "GOOGL",
+    "vertical": "Technology",
+    "price": 140.0,
+    "marketCapB": 1800,
+    "revenueGrowth": "10%",
+    "grossMargin": "55%",
+    "evRevenue": 5.8,
+    "ytdPerformance": "20%"
+  },
+  {
+    "company": "Facebook, Inc.",
+    "ticker": "META",
+    "vertical": "Social Media",
+    "price": 320.0,
+    "marketCapB": 1000,
+    "revenueGrowth": "30%",
+    "grossMargin": "80%",
+    "evRevenue": 6.0,
+    "ytdPerformance": "25%"
+  },
+  {
+    "company": "NVIDIA Corporation",
+    "ticker": "NVDA",
+    "vertical": "Semiconductors",
+    "price": 500.0,
+    "marketCapB": 1200,
+    "revenueGrowth": "40%",
+    "grossMargin": "65%",
+    "evRevenue": 15.0,
+    "ytdPerformance": "50%"
+  },
+  {
+    "company": "Netflix, Inc.",
+    "ticker": "NFLX",
+    "vertical": "Streaming",
+    "price": 450.0,
+    "marketCapB": 200,
+    "revenueGrowth": "20%",
+    "grossMargin": "40%",
+    "evRevenue": 7.5,
+    "ytdPerformance": "10%"
+  },
+  {
+    "company": "Alibaba Group",
+    "ticker": "BABA",
+    "vertical": "E-commerce",
+    "price": 150.0,
+    "marketCapB": 400,
+    "revenueGrowth": "25%",
+    "grossMargin": "30%",
+    "evRevenue": 4.0,
+    "ytdPerformance": "15%"
+  },
+  {
+    "company": "Johnson & Johnson",
+    "ticker": "JNJ",
+    "vertical": "Healthcare",
+    "price": 165.0,
+    "marketCapB": 450,
+    "revenueGrowth": "5%",
+    "grossMargin": "70%",
+    "evRevenue": 5.2,
+    "ytdPerformance": "8%"
+  }
+]
