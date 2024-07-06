@@ -13,10 +13,10 @@ const addingRowTable = async () => {
   result?.forEach((data, idx) => {
     const row = document.createElement("tr");
     row.style.backgroundColor = idx % 2 === 0 ? "#ededed" : "white";
-    row.style.borderRadius = "100px";
 
     const cellCompany = document.createElement("td");
     cellCompany.textContent = data.company;
+    cellCompany.classList.add("rounded-l-md");
     row.appendChild(cellCompany);
 
     const cellTicker = document.createElement("td");
@@ -49,6 +49,7 @@ const addingRowTable = async () => {
 
     const cellYtdPerformance = document.createElement("td");
     cellYtdPerformance.textContent = data.ytdPerformance;
+    cellYtdPerformance.classList.add("rounded-r-md", "md:py-2", "py-1");
     row.appendChild(cellYtdPerformance);
 
     tableBody.appendChild(row);
