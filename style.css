@@ -1,0 +1,43 @@
+/* google font importing */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  font-family: "Crimson Pro";
+}
+
+.text-dm-sans {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.text-crimson-pro {
+  font-family: "Crimson Pro", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.my-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0px 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  .my-container {
+    padding: 0px 6px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .my-container {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* CSS rules for tablets */
+  .my-container {
+    padding: 0 10px;
+  }
+}
