@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     colors: {
       primary: "#2042B6",
+      primaryBG: "#ededed",
     },
     fontFamily: {
       "dm-sans": ["DM Sans", "sans-serif"],
