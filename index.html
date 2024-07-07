@@ -19,6 +19,7 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="style.css" />
@@ -477,7 +478,60 @@
     <!-- potential feature listings section end from here >>>>>>>>>>>>>>>>>>>>>> -->
 
     <!-- state of usa section start from here  ------------------------------>
-    <section></section>
+    <section 
+    class="bg-[#ededed]">
+      <div
+      style="background: url('./assets/banner-perticle.png') no-repeat content-box right center;"
+      class="my-container">
+        <h1 class="md:text-5xl sm:text-4xl text-3xl text-crimson-pro relative">State Of USA</h1>
+
+        <select
+        class="select select-md md:mt-3 mt-2 md:text-4xl px-6 sm:text-3xl text-2xl text-crimson-pro  w-fit outline-none bg-primary text-white border-none rounded-full"
+        >
+        <option disabled selected>2024</option>
+        <option>Han Solo</option>
+        <option>Greedo</option>
+      </select>
+      <p class="md:text-sm text-xs md:py-5 py-4">
+        Click through the slides or download the report to view natively on you device.
+      </p>
+
+      <!-- slider is here -->
+      <div class="container swiper overflow-auto md:pb-20 pb-16">
+        <div class="slider-wrapper">
+          <div class="card-list swiper-wrapper">
+            <div class="card-item swiper-slide">
+              <img src="assets/slider2.png" alt="slider Image" class="w-full h-full">
+            </div>
+            <div class="card-item swiper-slide">
+              <img src="assets/slideri.png" alt="slider Image" class="w-full h-full">
+            </div>
+            <div class="card-item swiper-slide">
+              <img src="assets/slideri.png" alt="slider Image" class="w-full h-full">
+            </div>
+            <div class="card-item swiper-slide">
+              <img src="assets/slider2.png" alt="slider Image" class="w-full h-full">
+            </div>
+            <div class="card-item swiper-slide">
+              <img src="assets/slideri.png" alt="slider Image" class="w-full h-full">
+            </div>
+            <div class="card-item swiper-slide">
+              <img src="assets/slider2.png" alt="slider Image" class="w-full h-full">
+            </div>
+          </div>
+          <div class="swiper-pagination">Pages</div>
+        </div>
+
+        <div>
+
+        </div>
+        <div class="btn bg-white rounded-full md:text-lg text-base md:px-6 px-5  btn-ghost swiper-slide-button swiper-button-prev"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="btn bg-white rounded-full md:text-lg text-base md:px-6 px-5  btn-ghost swiper-slide-button swiper-button-next"><i class="fa-solid fa-arrow-left"></i></div>
+      </div>
+
+
+      </div>
+    </section>
     <!-- state of usa section end from here xxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
     <!-- stories and ideas section start form here --------------------->
@@ -782,7 +836,9 @@
     <script src="script.js"></script>
     <!-- <script src="path/to/chartjs/dist/chart.umd.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="chartJsFIle.js"></script>
+    <script src="slider.js"></script>
     </script>
   </body>
 </html>
