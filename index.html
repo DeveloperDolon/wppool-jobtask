@@ -37,8 +37,10 @@
 
       <header class="bg-[#0c109fc9] relative z-20 overflow-x-hidden">
         <!-- navbar section start from here -->
-        <nav class="md:py-2 py-1">
-          <div class="navbar my-container">
+        <nav class="md:py-2 py-1 lg:py-4">
+
+
+          <div id="nav-bar" class="navbar rounded-lg flex-no-wrap fixed top-0 flex w-full items-center justify-between lg:flex-wrap lg:justify-start my-container mx-auto left-1/2 transform -translate-x-1/2 p-4">
             <div class="navbar-start">
               <button>
                 <img
@@ -51,12 +53,14 @@
 
             <div class="navbar-end gap-4">
               <button
-                class="md:px-3 px-2 btn-ghost md:py-2 py-1 rounded-full border border-white md:text-sm text-sx font-light"
+                id="nav-btn"
+                class="md:px-3 px-2 btn-ghost md:py-2 py-1 rounded-full border border-white md:text-sm text-sx text-white font-light"
               >
-                <i class="fa-solid fa-share-nodes text-white"></i>
+                <i class="fa-solid fa-share-nodes"></i>
               </button>
 
               <button
+                id="nav-btn"
                 class="btn-ghost text-white text-dm-sans md:text-sm text-xs md:py-2 py-1 md:px-5 px-3 rounded-full border border-white"
               >
                 Download the 2024 Repost
@@ -69,6 +73,7 @@
                   class="btn btn-ghost btn-circle"
                 >
                   <svg
+                    id="hambarger"
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-5 w-5 text-white"
                     fill="none"
@@ -95,7 +100,6 @@
             </div>
           </div>
         </nav>
-
         <!-- banner section start from here -->
         <section
           class="my-container relative overflow-hidden flex sm:flex-row flex-col justify-center items-center md:my-10 my-6"
