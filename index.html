@@ -169,7 +169,7 @@
     <!-- wppool index section start from here -------------------------- -->
     <section class="md:py-12 py-10 md:pb-0 pb-0 bg-[#ededed] overflow-x-scroll">
       <div
-        class="my-container bg-white rounded-sm grid grid-cols-12 md:p-6 p-5 gap-8 h-screen"
+        class="my-container bg-white rounded-lg shadow-lg mb-6 shadow-gray-300 grid grid-cols-12 md:p-6 p-5 gap-8"
       >
         <!-- side bar elements -->
         <div
@@ -326,6 +326,11 @@
                 <a role="tab" class="tab">1M</a>
                 <a role="tab" class="tab">1W</a>
               </div>
+            </div>
+
+            <!-- chart section dis here -->
+            <div class="md:mt-7 mt-6">
+              <canvas id="lineChart" class="w-full h-full"></canvas>
             </div>
           </div>
         </div>
@@ -775,5 +780,9 @@
     <!-- footer section end from here ---------------------------------- -->
 
     <script src="script.js"></script>
+    <!-- <script src="path/to/chartjs/dist/chart.umd.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="chartJsFIle.js"></script>
+    </script>
   </body>
 </html>
