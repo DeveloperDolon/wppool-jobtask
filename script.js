@@ -62,11 +62,9 @@ window.addEventListener("scroll", function () {
   const scrollTop = window.scrollY || document.documentElement.scrollTop;
   const navBar = document.querySelector("#nav-bar");
   const navBtns = document.querySelectorAll("#nav-btn");
-  const hamberger = document.querySelector("#hambarger");
 
   if (scrollTop > 1) {
     navBar.classList.add("bg-white", "z-50", "shadow-lg", "shadow-white");
-    hamberger.classList.remove("text-white");
     navBtns.forEach((element) => {
       element.classList.remove("border-white", "text-white");
       element.classList.add("border-black");
@@ -74,7 +72,6 @@ window.addEventListener("scroll", function () {
   }
   if (scrollTop === 0) {
     navBar.classList.remove("bg-white", "shadow-lg", "shadow-white");
-    hamberger.classList.add("text-white");
     navBtns.forEach((element) => {
       element.classList.add("border-white", "text-white");
     });
