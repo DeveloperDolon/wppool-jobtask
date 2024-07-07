@@ -37,11 +37,11 @@
 
       <header class=" relative my-container bg-[#0c109fc9] rounded-xl z-20 overflow-x-hidden">
         <!-- navbar section start from here -->
-        <nav class="md:py-2 py-1 lg:py-4">
+        <nav class="md:py-2 py-1 lg:py-4 relative">
 
 
           <div id="nav-bar" class="navbar rounded-lg flex-no-wrap fixed top-0 flex w-full items-center justify-between lg:flex-wrap lg:justify-start my-container pt-3 mx-auto left-1/2 transform -translate-x-1/2">
-            <div class="navbar-start">
+            <div class="navbar-start overflow-hidden">
               <button>
                 <img
                   class="md:w-40 sm:w-28 w-20" 
@@ -54,25 +54,25 @@
             <div class="navbar-end gap-4">
               <button
                 id="nav-btn"
-                class="md:px-3 px-2 btn-ghost md:py-2 py-1 rounded-full border border-white md:text-sm text-sx text-white font-light"
+                class="sm:inline-block hidden md:px-3 px-2 btn-ghost md:py-2 py-1 rounded-full border border-white md:text-sm text-sx text-white font-light"
               >
                 <i class="fa-solid fa-share-nodes"></i>
               </button>
 
               <button
                 id="nav-btn"
-                class="btn-ghost text-white text-dm-sans md:text-sm text-xs md:py-2 py-1 md:px-5 px-3 rounded-full border border-white"
+                class="sm:inline-block hidden btn-ghost text-white text-dm-sans md:text-sm text-xs md:py-2 py-1 md:px-5 px-3 rounded-full border border-white"
               >
                 Download the 2024 Repost
               </button>
 
-              <div class="relative">
-                <button class="btn btn-md btn-ghost md:text-xl text-lg text-white">
+              <div>
+                <button onclick="dropdownSystem(true)" id="hambarger" class="btn btn-md btn-ghost md:text-xl text-lg text-white">
                   <i class="fa-solid fa-bars"></i>
                 </button>
 
-                <div class="absolute bg-white max-w-lg flex flex-col justify-center items-center min-w-96 md:py-6 py-5 md:px-6 px-4 rounded-xl right-[2px] -bottom-[315px]">
-                  <div class="w-full flex justify-between z-50">
+                <div id="dropdown" class="absolute transition-all duration-300 w-0 h-0 bg-white overflow-hidden z-50 flex flex-col justify-center items-center rounded-xl right-0 top-0">
+                  <div class="w-full flex sm:justify-between justify-end gap-2 z-50">
                       <button
                           class="md:px-3 px-2 btn-ghost md:py-2 py-1 rounded-full border border-white md:text-sm text-sx text-white bg-green-200 font-light"
                         >
@@ -85,12 +85,12 @@
                         Download the 2024 Repost
                       </button>
 
-                    <button class="btn btn-sm btn-ghost md:text-2xl sm:text-xl text-lg">
+                    <button onclick="dropdownSystem(false)" class="btn btn-sm btn-ghost md:text-2xl sm:text-xl text-lg">
                       <i class="fa-solid fa-xmark"></i>
                     </button>
                   </div>
                   
-                  <ul class="w-full mt-5">
+                  <ul class=" sm:w-full w-fit mt-5">
                     <li class="md:text-base transition-all duration-300 hover:bg-gray-200 cursor-pointer py-1 px-2 rounded-lg text-sm font-medium">The WPPOOL Index</li>
                     <li class="md:text-base transition-all duration-300 hover:bg-gray-200 cursor-pointer py-1 px-2 rounded-lg text-sm font-medium">All Companies</li>
                     <li class="md:text-base transition-all duration-300 hover:bg-gray-200 cursor-pointer py-1 px-2 rounded-lg text-sm font-medium">Potential Future Listings</li>
@@ -100,7 +100,7 @@
                     <li class="md:text-base transition-all duration-300 hover:bg-gray-200 cursor-pointer py-1 px-2 rounded-lg text-sm font-medium">WPPOOL Portfolio Companies</li>
                   </ul>
 
-                  <h3 class="md:text-xl text-lg text-crimson-pro text-primary w-full px-2 md:mt-4 mt-3">Visit WPPOOL</h3>
+                  <h3 class="md:text-xl text-lg text-crimson-pro text-primary sm:w-full w-fit px-2 md:mt-4 mt-3">Visit WPPOOL</h3>
                 </div>
               </div>
             </div>

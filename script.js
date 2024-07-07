@@ -62,18 +62,40 @@ window.addEventListener("scroll", function () {
   const scrollTop = window.scrollY || document.documentElement.scrollTop;
   const navBar = document.querySelector("#nav-bar");
   const navBtns = document.querySelectorAll("#nav-btn");
+  const hambarger = document.querySelector("#hambarger");
 
   if (scrollTop > 1) {
     navBar.classList.add("bg-white", "z-50", "shadow-lg", "shadow-white");
+    hambarger.classList.remove("text-white");
     navBtns.forEach((element) => {
       element.classList.remove("border-white", "text-white");
       element.classList.add("border-black");
     });
   }
   if (scrollTop === 0) {
+    hambarger.classList.add("text-white");
     navBar.classList.remove("bg-white", "shadow-lg", "shadow-white");
     navBtns.forEach((element) => {
       element.classList.add("border-white", "text-white");
     });
   }
 });
+
+const dropdownSystem = (condition) => {
+  const dropdown = document.querySelector("#dropdown");
+
+  if (condition) {
+    dropdown.classList.remove("w-0", "h-0", "p-0");
+    dropdown.classList.add("min-w-96", "md:py-6", "py-5", "md:px-6", "px-4");
+  } else {
+    dropdown.classList.add("w-0", "h-0", "p-0");
+    dropdown.classList.remove(
+      "sm:max-w-96",
+      "max-w-80",
+      "md:py-6",
+      "py-5",
+      "md:px-6",
+      "px-4"
+    );
+  }
+};
