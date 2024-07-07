@@ -519,14 +519,47 @@
               <img src="assets/slider2.png" alt="slider Image" class="w-full h-full">
             </div>
           </div>
-          <div class="swiper-pagination">Pages</div>
+          <div class="swiper-pagination"></div>
         </div>
 
         <div>
 
         </div>
-        <div class="btn bg-white rounded-full md:text-lg text-base md:px-6 px-5  btn-ghost swiper-slide-button swiper-button-prev"><i class="fa-solid fa-arrow-right"></i></div>
-        <div class="btn bg-white rounded-full md:text-lg text-base md:px-6 px-5  btn-ghost swiper-slide-button swiper-button-next"><i class="fa-solid fa-arrow-left"></i></div>
+
+        <div class="flex justify-between items-center flex-wrap md:mt-5 mt-4">
+
+          <div class="flex items-center flex-wrap gap-5 flex-1">
+
+            <div class="relative sm:top-0 -top-8">
+              <div class="btn bg-white rounded-full md:text-lg text-base md:px-6 px-5  btn-ghost swiper-slide-button swiper-button-prev">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+
+              <div class="btn bg-white rounded-full md:text-lg text-base md:px-6 left-20 px-5  btn-ghost swiper-slide-button swiper-button-next">
+                
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="flex gap-5 sm:justify-start justify-center items-center sm:ml-36 sm:mt-0 mt-12 ">
+              <p class="md:text-base text-sm font-medium">Pages</p>
+
+              <select
+                class="select select-md md:mt-3 mt-2 md:text-base text-sm px-6  w-fit outline-none bg-white text-black border-none rounded-full"
+                >
+                <option disabled selected>1 and 2</option>
+                <option>Han Solo</option>
+                <option>Greedo</option>
+              </select>
+              <p class="md:text-base text-sm font-medium">of 37</p>
+            </div>
+
+          </div>
+
+          <div class="sm:mt-0 mt-5 flex sm:justify-end justify-center">
+            <button class="btn-md bg-primary text-white btn-ghost rounded-full">Download The 2023 Report</button>
+          </div>
+        </div>
       </div>
 
 

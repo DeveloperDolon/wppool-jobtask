@@ -28,19 +28,7 @@
 
 .slider-wrapper {
   overflow: hidden;
-  max-width: 1200px;
-  margin: 0 70px 55px;
-}
-
-.swiper-button-next {
-  position: absolute;
-  left: 0;
-  top: 70%;
-}
-.swiper-button-prev {
-  position: absolute;
-  left: 70px;
-  top: 70%;
+  max-width: 100%;
 }
 
 /* .card-list .card-item {
